@@ -16,7 +16,7 @@ export class Movie {
     async init() {
         const response = await axios.get(this.discoverurl)
         this.discovermovies = response.data.results
-        return response.data.results
+        //return response.data.results
     }
     getDiscoverMovies() {
         return this.discovermovies
