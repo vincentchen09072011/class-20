@@ -40,6 +40,5 @@ export class Movie {
             const isaftermarch2023 = date.getFullYear() >= 2023 && date.getMonth() >= 4
             return isaftermarch2023
         }).map((movie: IMovie) => ({title: movie.title, release_date: movie.release_date,}))
-        //console.log(this.discovermovies.map((movie: IMovie) => new Date(movie.release_date).getFullYear(),),)
     }
 }
