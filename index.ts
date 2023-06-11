@@ -51,17 +51,17 @@ import {Movie} from './movie'
 const fetchData = async () => {
     const movie = new Movie()
     await movie.init()
-    const movies = movie.getDiscoverMovies
+    const movies = movie.getDiscoverMovies()
     console.log(movies)
-    const sortedmovies = await movie.getdiscoverMoviessortedbypopularity
+    const sortedmovies = await movie.getdiscoverMoviessortedbypopularity()
     console.log(sortedmovies)
-    const averagepopularity = await movie.getaveragepopularityofdiscoverMovies
+    const averagepopularity = await movie.getaveragepopularityofdiscoverMovies()
     console.log(averagepopularity)
-    const mostpopularmovie = await movie.getmostpopularMovie
+    const mostpopularmovie = await movie.getmostpopularMovie()
     console.log(mostpopularmovie)
-    const childrenmovie = await movie.showchildrenMovies
+    const childrenmovie = await movie.showchildrenMovies()
     console.log(childrenmovie)
-    const moviesaftermarch = await movie.getMoviesaftermarch
+    const moviesaftermarch = await movie.getMoviesaftermarch()
     console.log(moviesaftermarch)
 }
 fetchData()
