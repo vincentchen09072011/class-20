@@ -53,15 +53,15 @@ const fetchData = async () => {
     await movie.init()
     const movies = movie.getDiscoverMovies
     console.log(movies)
-    const sortedmovies = movie.getdiscoverMoviessortedbypopularity
+    const sortedmovies = await movie.getdiscoverMoviessortedbypopularity
     console.log(sortedmovies)
-    const averagepopularity = movie.getaveragepopularityofdiscoverMovies
+    const averagepopularity = await movie.getaveragepopularityofdiscoverMovies
     console.log(averagepopularity)
-    const mostpopularmovie = movie.getmostpopularMovie
+    const mostpopularmovie = await movie.getmostpopularMovie
     console.log(mostpopularmovie)
-    const childrenmovie = movie.showchildrenMovies
+    const childrenmovie = await movie.showchildrenMovies
     console.log(childrenmovie)
-    const moviesaftermarch = movie.getMoviesaftermarch
+    const moviesaftermarch = await movie.getMoviesaftermarch
     console.log(moviesaftermarch)
 }
-console.log(fetchData())
+fetchData()
